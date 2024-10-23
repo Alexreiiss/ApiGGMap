@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto de Mapas com API</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Localizador de Endereço</h1>
+        <form id="addressForm">
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" placeholder="Digite o CEP"><br><br>
+
+            <label for="logradouro">Logradouro:</label>
+            <input type="text" id="logradouro" name="logradouro" placeholder="Digite o logradouro"><br><br>
+
+            <label for="coordinates">Coordenadas (lat,lon):</label>
+            <input type="text" id="coordinates" name="coordinates" placeholder="Ex: -23.5505,-46.6333"><br><br>
+
+            <button type="submit">Buscar Localização</button>
+        </form>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</body>
+</html>
